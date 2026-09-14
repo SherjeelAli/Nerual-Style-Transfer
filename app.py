@@ -45,7 +45,7 @@ encoder = VGGEncoder("vgg_normalised.pth").to(device)
 decoder = Decoder().to(device)
 decoder.load_state_dict(
     torch.load(
-        r"C:\Users\HP\Desktop\NST\experiment\final_exp\decoder_final.pth",
+       "experiment/final_exp/decoder_final.pth",
         map_location=torch.device("cpu"),
     )
 )
